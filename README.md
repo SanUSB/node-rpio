@@ -3,21 +3,23 @@
 
 In tests performed with Raspberry Pi (Rpi) zero W, 1, 2, 3 and 4, the libraries rpio, onoff and rpi-gpio for access to GPIO pins
 they only work with manual installation. NVM did not respond well when installing the libraries. Functional version
-tested from node 4.9.1 (lts / argon):
+tested from node 4.9.1 (lts/argon):
 
 # Raspberry Pi Zero W and 1:
 
+```
 wget https://nodejs.org/dist/v4.9.1/node-v4.9.1-linux-armv6l.tar.gz
 tar -xvf node-v4.9.1-linux-armv6l.tar.gz
 cp -r node-v4.9.1-linux-armv6l/* /usr/local/
-
+```
 
 # Raspberry Pi 2, 3 e 4:
 
+```
 wget https://nodejs.org/dist/v4.9.1/node-v4.9.1-linux-armv7l.tar.gz
 tar -xvf node-v4.9.1-linux-armv7l.tar.gz
 cp -r node-v4.9.1-linux-armv7l/* /usr/local/
-
+```
 
 As stated below, after installing the rpio library, it is necessary:
 
