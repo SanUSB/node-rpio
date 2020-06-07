@@ -1,31 +1,23 @@
-var rpio = require('../lib/rpio');
+/*
+ * Set the initial state to low.  The state is set prior to the pin
+ * being actived, so is safe for devices which require a stable setup.
+ */
+var rpio = require('rpio');
+
+rpio.open(12, rpio.OUTPUT, rpio.LOW);
 
 /*
- * Blink an LED connected to pin 15 a few times.
- *
- * This example uses the default physical P01-P40 numbering, therefore physical
- * pin 15 which is also known as GPIO/BCM pin 22.
+ * The sleep functions block, but rarely in these simple programs does
+ * one care about that.  Use a setInterval()/setTimeout() loop instead
+ * if it matters.
  */
-var pin = 15;
+while (1) {
+        /* On for 1 second */
+        rpio.write(12, rpio.HIGH);
+        rpio.sleep(1);
 
-/*
- * Configure the pin for output, setting it low initially.  The state is set
- * prior to the pin being activated, so is suitable for devices which require
- * a stable setup.
- */
-rpio.open(pin, rpio.OUTPUT, rpio.LOW);
-
-/*
- * Blink the LED 5 times.  The sleep functions block, but for a trivial example
- * like this that isn't a problem and simplifies things.
- */
-for (var i = 0; i < 5; i++) {
-
-	/* On for 1 second */
-	rpio.write(pin, rpio.HIGH);
-	rpio.sleep(1);
-
-	/* Off for half a second (500ms) */
-	rpio.write(pin, rpio.LOW);
-	rpio.msleep(500);
+        /* Off for half a second (500ms) */
+        rpio.write(12, rpio.LOW);
+        rpio.msleep(1000);
 }
+
