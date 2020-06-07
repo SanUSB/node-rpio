@@ -26,7 +26,7 @@ npm install rpio
 npm install onoff 
 npm install rpi-gpio
 ```
-As stated below, after installing the rpio library, it is necessary:
+The library tested examples are in the examples folder. As stated below, after installing the rpio library, it is necessary:
 
 ### Disable GPIO interrupts
 
