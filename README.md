@@ -1,7 +1,7 @@
 
 # Use of Raspberry Pi libraries to access Gpio pins with Node.js [![N|Solid](http://sanusb.blogspot.com.br/favicon.ico)](http://sanusb.org/)
 
-In tests performed with Raspberry Pi (Rpi) zero W, 1, 2, 3 and 4, the libraries `rpio` (physical pin-based numbering), `onoff` (BCM pin-based numbering) and `rpi-gpio` (physical pin-based numbering) for access to GPIO pins, this only work with manual installation. NVM did not respond well when installing the libraries. Functional version tested from node 4.9.1 (lts/argon):
+In tests performed with Raspberry Pi (Rpi) zero W, 1, 2, 3 and 4, the libraries `rpio` (physical pin-based numbering), `onoff` (BCM pin-based numbering) and `rpi-gpio` (physical pin-based numbering) for access to GPIO pins, this only work with manual installation. NVM did not respond well when installing the libraries using Raspberry Pi OS Buster. Functional version tested from node was 4.9.1 (lts/argon):
 
 ## Raspberry Pi Zero W and 1:
 
@@ -22,9 +22,9 @@ cp -r node-v4.9.1-linux-armv7l/* /usr/local/
 For comparison, install the three libraries:
 
 ```
-npm install rpio 
-npm install onoff 
-npm install rpi-gpio
+* npm install rpio ([node-rpio](https://github.com/jperkin/node-rpio))
+* npm install onoff ([onoff](https://www.npmjs.com/package/onoff))
+* npm install rpi-gpio ([rpi-gpio](https://www.npmjs.com/package/rpi-gpio))
 ```
 The library tested examples are in the examples folder. As stated below, after installing the rpio library, it is necessary:
 
