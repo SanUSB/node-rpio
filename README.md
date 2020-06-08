@@ -21,11 +21,11 @@ cp -r node-v4.9.1-linux-armv7l/* /usr/local/
 
 For comparison, install the three libraries:
 
-```
+
 * npm install rpio ([node-rpio](https://github.com/jperkin/node-rpio))
 * npm install onoff ([onoff](https://www.npmjs.com/package/onoff))
 * npm install rpi-gpio ([rpi-gpio](https://www.npmjs.com/package/rpi-gpio))
-```
+
 The library tested examples are in the examples folder. As stated below, after installing the rpio library, it is necessary:
 
 ### Disable GPIO interrupts
