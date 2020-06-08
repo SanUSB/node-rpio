@@ -4,7 +4,7 @@
  */
 var rpio = require('rpio');
 
-rpio.open(12, rpio.OUTPUT, rpio.LOW);
+rpio.open(12, rpio.OUTPUT, rpio.LOW); // physical pin-based numbering
 
 /*
  * The sleep functions block, but rarely in these simple programs does

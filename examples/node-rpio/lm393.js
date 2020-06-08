@@ -1,4 +1,4 @@
-var rpio = require('../lib/rpio');
+var rpio = require('rpio');
 
 /*
  * Watch an LM393-based sound detection module on Pin 7 / GPIO 4 and print a

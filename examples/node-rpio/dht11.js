@@ -1,4 +1,4 @@
-var rpio = require('../lib/rpio');
+var rpio = require('rpio');
 
 /*
  * Repeatedly read a DHT11 attached to Pin 7 / GPIO 4 and print out the current

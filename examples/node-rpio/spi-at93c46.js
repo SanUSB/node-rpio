@@ -1,4 +1,4 @@
-var rpio = require('../lib/rpio');
+var rpio = require('rpio');
 
 /*
  * Read data from an SPI-attached AT93C46 EEPROM.

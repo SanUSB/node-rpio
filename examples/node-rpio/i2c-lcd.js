@@ -1,4 +1,4 @@
-var rpio = require('../lib/rpio');
+var rpio = require('rpio');
 
 /*
  * Magic numbers to initialise the i2c display device and write output,

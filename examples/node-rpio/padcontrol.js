@@ -1,4 +1,4 @@
-var rpio = require('../lib/rpio');
+var rpio = require('rpio');
 
 rpio.init({gpiomem: false});
 

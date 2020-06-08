@@ -1,4 +1,4 @@
-var rpio = require('../lib/rpio');
+var rpio = require('rpio');
 
 /*
  * Watch a button switch attached to the configured pin for changes.
