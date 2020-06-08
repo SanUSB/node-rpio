@@ -49,6 +49,8 @@ SUBSYSTEM=="bcm2835-gpiomem", KERNEL=="gpiomem", GROUP="gpio", MODE="0660"
 EOF
 ```
 
+From now on it is possible to test the examples of the three libraries for accessing Gpio pins with Node.js.
+
 node-rpio
 =========
 
