@@ -1,7 +1,7 @@
 
-# Use of Raspberry Pi libraries to access Gpio pins with Node.js [![N|Solid](http://sanusb.blogspot.com.br/favicon.ico)](http://sanusb.org/)
+# The Use of Raspberry Pi libraries to access Gpio pins with Node.js [![N|Solid](http://sanusb.blogspot.com.br/favicon.ico)](http://sanusb.org/)
 
-In tests performed with Raspberry Pi (Rpi) zero W, 1, 2, 3 and 4, the libraries `node-rpio` (physical pin-based numbering), `pigpio` (BCM pin-based numbering), `onoff` (BCM pin-based numbering) and `rpi-gpio` (physical pin-based numbering) for access to GPIO pins, this only work with manual installation. The nvm (node version manager) did not work well when installing these libraries using Raspberry Pi OS Buster. Functional version tested from node was 4.9.1 (lts/argon):
+During tests performed with Raspberry Pi (Rpi) zero W, 1, 2, 3 and 4, the libraries `node-rpio` (physical pin-based numbering), `pigpio` (BCM pin-based numbering), `onoff` (BCM pin-based numbering) and `rpi-gpio` (physical pin-based numbering) for access to GPIO pins, only work with manual installation. The nvm (node version manager) did not work well when installing these libraries using Raspberry Pi OS Buster. Functional version tested from node was 4.9.1 (lts/argon):
 
 
 To manually remove the previous node, npm (node package manager) and nvm files and configurations, enter the commands below at the terminal:
@@ -19,7 +19,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 ```
 
-## Install node and npm on Raspberry Pi Zero W and 1:
+## Install node and npm on Raspberry Pi Zero W and 1 (Arm6):
 
 ```
 wget https://nodejs.org/dist/v4.9.1/node-v4.9.1-linux-armv6l.tar.gz
@@ -27,7 +27,7 @@ tar -xvf node-v4.9.1-linux-armv6l.tar.gz
 cp -r node-v4.9.1-linux-armv6l/* /usr/local/
 ```
 
-## Install node and npm on Raspberry Pi 2, 3 e 4:
+## Install node and npm on Raspberry Pi 2, 3 e 4 (Arm7):
 
 ```
 wget https://nodejs.org/dist/v4.9.1/node-v4.9.1-linux-armv7l.tar.gz
