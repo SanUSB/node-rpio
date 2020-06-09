@@ -7,6 +7,7 @@ function start() {
 }
 function on() {
  gpio.write(pin, true);
+ console.log('rpi-gpio');  
 }
 function off() {
  gpio.write(pin, false);

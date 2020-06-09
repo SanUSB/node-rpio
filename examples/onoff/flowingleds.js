@@ -24,6 +24,7 @@ function flowingLeds() { //function for flowing Leds
   if (dir == "down") indexCount--; //count downwards if direction is down
   leds[indexCount].writeSync(1); //turn on LED that where array index matches count
   if (dir == "up") indexCount++ //count upwards if direction is up
+  console.log('onoff');  
 };
 
 function unexportOnClose() { //function to run when exiting program

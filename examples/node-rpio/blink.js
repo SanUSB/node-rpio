@@ -16,8 +16,9 @@ while (1) {
         rpio.write(12, rpio.HIGH);
         rpio.sleep(1);
 
-        /* Off for half a second (500ms) */
+        /* Off for half a second (1000ms) */
         rpio.write(12, rpio.LOW);
         rpio.msleep(1000);
+		console.log('rpio');  
 }
 
