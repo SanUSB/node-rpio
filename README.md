@@ -1,7 +1,7 @@
 
 # The Use of Raspberry Pi libraries to access Gpio pins with Node.js [![N|Solid](http://sanusb.blogspot.com.br/favicon.ico)](http://sanusb.org/)
 
-During tests performed with Raspberry Pi (Rpi) zero W, 1, 2, 3 and 4, the libraries `node-rpio` (physical pin-based numbering), `pigpio` (BCM pin-based numbering), `onoff` (BCM pin-based numbering) and `rpi-gpio` (physical pin-based numbering) for access to GPIO pins, only work with manual installation. The nvm (node version manager) did not work well when installing these libraries using Raspberry Pi OS Buster. Functional version tested from node was 4.9.1 (lts/argon):
+During tests performed with Raspberry Pi (Rpi) zero W, 1, 2, 3 and 4, the libraries `node-rpio` (physical pin-based numbering), `pigpio` (BCM pin-based numbering), `onoff` (BCM pin-based numbering) and `rpi-gpio` (physical pin-based numbering) for access to GPIO pins, only work with manual installation. The nvm (node version manager) did not work well when installing these libraries using Raspberry Pi OS Buster. Functional version tested from node was 4.9.1 (lts/argon). Tutorial: https://youtu.be/GDnDrZjyT7s.
 
 
 To manually remove the previous node, npm (node package manager) and nvm files and configurations, enter the commands below at the terminal:
