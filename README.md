@@ -47,7 +47,7 @@ The library tested examples are in the examples folder. As stated below, after i
 
 ### Disable GPIO interrupts
 
-If running a newer Raspbian release, you will need to add the following line to
+If running a newer Raspberry Pi OS release, you will need to add the following line to
 `/boot/config.txt` and reboot:
 
 ```
